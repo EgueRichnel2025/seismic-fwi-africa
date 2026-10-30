@@ -3,19 +3,19 @@ __pycache__/
 *.py[cod]
 *.so
 
-# Virtual environments
+# Environnements virtuels
 .venv/
 venv/
 env/
 
-# Testing / coverage
+# Tests et couverture
 .pytest_cache/
 .coverage
 htmlcov/
 .tox/
 .nox/
 
-# Build / packaging
+# Construction et packaging
 build/
 dist/
 *.egg-info/
@@ -24,22 +24,35 @@ dist/
 .vscode/
 .idea/
 
-# OS
+# Système
 .DS_Store
 Thumbs.db
 
-# Scientific outputs
+# Résultats scientifiques : exclus par défaut
 results/*
+!results/.gitkeep
+
+# Figures et animations
+!results/figures/
+results/figures/*
+!results/figures/*.png
+!results/figures/*.gif
+!results/figures/.gitkeep
+
+# Vidéos de démonstration
+!results/videos/
+results/videos/*
+!results/videos/*.mp4
+!results/videos/.gitkeep
+
+# Données numériques volumineuses
 experiments/output/*
+!experiments/output/.gitkeep
 *.npy
 *.npz
 *.h5
 *.hdf5
 
-# Keep directory structure
-!results/.gitkeep
-!experiments/output/.gitkeep
-
-# Temporary files
+# Fichiers temporaires
 *.tmp
 *.log
